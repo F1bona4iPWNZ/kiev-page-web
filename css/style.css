@@ -1,0 +1,864 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    background: #E5E5E5;
+    max-width: 1440px;
+    user-select: none;
+}
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+ul,
+li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    margin: 0 auto;
+
+    /*font-family: 'Montserrat', sans-serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'Sawarabi Mincho', sans-serif;
+font-family: 'Rokkitt', serif;*/
+}
+.header{
+    background-image: url(../img/header-bcgr.jpg);
+    width: 1440px;
+    background-repeat: no-repeat;/* чтобы картинка не повторялась*/
+    background-size: cover;/* не расстягивалась*/
+    background-position:center;
+   /* max-height: 940px;
+    background-size: 1440px;
+    */
+    background-size:100%;
+    height: 940px;
+}
+.menu{
+ padding-right: 164px;
+ display: inline-block;
+ padding-top: 43px;
+}
+.header_content_inner{
+display: flex;
+justify-content: space-between;
+}
+.header_logo{
+    padding: 17px 125px 5px 165px;
+}
+.menu li{
+    display: inline-block;
+}
+.menu li + li{
+    padding-left: 51px;
+}
+.menu ul{
+    display: flex;
+}
+.menu a{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23px;
+    color: #FFFFFF;
+    border-bottom :1px solid transparent;
+    padding: 0;
+    transition: all .2s;
+}
+.menu a:hover{
+    border-color: #fff500;
+    padding: 0px ;
+}
+.icon-call img{
+    padding: 43px 165px 5px 0px;
+    text-align: center;
+}
+.get-search{
+    padding: 43px 128px 5px 0;
+    background: url('../img/search.png') no-repeat scroll 67% 55%;
+}
+.button-search {
+    display: inline-block;
+    border-bottom: 1px solid #FFFFFF;
+  }
+.button-search input {
+    all: unset;
+  }
+input[type="search"]::-ms-clear { /* нестандартный псевдоэлемент IE */ 
+    display: none;
+  }
+input[type="search"]::-webkit-search-cancel-button { /* нестандартный псевдоэлемент WebKit/Blink, но Esc по-прежнему будет удалять раннее введённый текст */ 
+    display: none;
+  }
+.welcome{
+font-family: 'Sawarabi Mincho', sans-serif;
+font-size: 185.213px;
+line-height: 274px;
+text-align: center;
+text-transform: uppercase;
+position: relative;
+padding: 90px 165px 0px;
+color: rgba(255, 255, 255, 0.25);
+}
+.welcome-descript{
+position: absolute;
+width: 350px;
+height: 158.99px;
+left: 260px;
+top: 515px;
+font-family: 'Raleway', sans-serif;
+font-weight: 900;
+font-size: 45px;
+line-height: 53px;
+text-transform: uppercase;
+color: #F4F4F4;
+}
+.border-yellow{
+border: 2px solid #F2C94C;
+box-sizing: border-box;
+height: 152px;
+margin-left: 165px;
+margin-right: 355px;
+margin-top: 94px;
+}
+.default-btn{
+position: absolute;
+width: 255px;
+height: 60px;
+left: 925px;
+top: 606px;
+background: rgba(255, 255, 255, 0.9);
+}
+#modal{/*  используется для вызова бесплатной консультации при использовании сайта fancybox*/
+    display: none;
+}
+.read-more{
+width: 255px;
+height: 28.67px;
+left: 925px;
+top: 622px;
+font-family: 'Montserrat', sans-serif;
+font-weight: 300;
+font-size: 25px;
+line-height: 30px;
+text-align: center;
+text-transform: uppercase;
+padding: 16px 0px;
+}
+.header_bottom{
+position: absolute;
+width: 821.96px;
+height: 88.74px;
+left: 309px;
+top: 852px;
+background: #F2F2F2;
+}
+.header-bottom-text{
+font-family: 'Rokkitt', serif;
+font-size: 64px;
+line-height: 73px;
+color: #1D1D1D;
+text-align: center;
+padding-top: 37px;
+}
+.benefits-kiev{
+height: 590px;
+}
+.benefits-slider-container{
+    position: relative;
+    margin: 65px 263px 101px 260px;
+    display: flex;
+}
+.benefits-slider-container img{
+    right: 445px;
+    position: absolute;
+}
+.benefits-slider-1{
+    /*background-image: url(../img/benefits-slider-1.jpg);*/
+    background-repeat: no-repeat;/* чтобы картинка не повторялась*/
+    background-size: cover;/* не расстягивалась*/
+    background-position:center;
+    min-height: 421px;
+    text-align: center;
+    margin: auto;
+}
+.benefits-inner{
+    position: relative;
+   background-image: url(../img/shadow-slider.png); 
+   min-height: 420px;
+   width: 445px;
+   margin-left: 359px;
+}
+.yellow-lines{
+    
+background-image: url(../img/yellow-lines.png);
+padding-bottom: 55px;
+position: relative;
+}
+/*.benefits-slider-1,.benefits-slider-2,.benefits-slider-3,.benefits-slider-4{
+    background-position:center;
+    min-height: 420px;
+    max-width: 445px;
+    text-align: center;
+    background-color: violet;
+    margin: 17px;
+
+}
+.benefits-slider-1:hover,.benefits-slider-2:hover,.benefits-slider-3:hover,.benefits-slider-4:hover{
+    width: 200px;
+    height: 200px;
+    background-color: tomato;
+}*/
+.benefits-slider-title{
+height: 68.87px;
+font-weight: 600;
+font-size: 30px;
+color: #F2F2F2;
+text-align: center;
+padding: 90px 88px 5px 65px;
+}
+.benefits-slider-text{
+    font-size: 18px;
+    line-height: 22px;
+    color: #E0E0E0;
+    padding: 61px 82px 60px 65px;
+    
+}
+.slick-slider{}
+/* Слайдер запущен */
+.slick-slider.slick-initialized{}
+/* Слайдер с точками */
+.slick-slider.slick-dotted{}
+/* Ограничивающая оболочка */
+.slick-list {
+    overflow: hidden;
+}
+/* Лента слайдов */
+.slick-track{
+    display: flex;
+}
+/* Слайд */
+.slick-slide{
+position: relative;
+opacity: 0.7;
+transition: all 0.3s ease 0s;/*плавно переходить слайд один на інший*/
+}
+/* Слайд активный (показывается) */
+.slick-slide.slick-active{
+    opacity: 1;
+}
+/* Слайд основной */
+.slick-slide.slick-current{
+    padding: 0px 50px;
+}
+/* Слайд по центру */
+.slick-slide.slick-center{}
+/* Клонированный слайд */
+.slick-slide.slick-cloned{}
+/* Стрелка */
+.slick-arrow{
+    height: 70px;
+    width: 40px;
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    border: inherit;
+}
+/* Стрелка влево */
+
+.benefits-slider-container .slick-arrow.slick-prev{
+    position: absolute;
+    left: 0;
+    background: url("../img/arrow_left.png") 0 0 / 120% no-repeat; 
+    width: 40px;
+    height: 70px; 
+    left: -64px;
+;  
+}
+/* Стрелка вправо */
+.benefits-slider-container .slick-arrow.slick-next{
+    position: absolute;
+    right: 0;
+    background: url("../img/arrow_right.png") 0 0 / 120% no-repeat;
+    margin-right: 6px;
+}
+/* Стрелка не активная */
+.slick-arrow.slick-disabled{}
+/* Точки (булиты) */
+.benefits-slider-container .slick-dots{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+.benefits-slider-container .slick-dots li{
+    list-style: none;
+    margin: 0px 10px;
+}
+/* Активная точка */
+.slick-dots li.slick-active button{
+    background-color:transparent;
+    border: 1px solid #fff;
+
+}
+/* Элемент точки */
+.benefits-slider-container .slick-dots button{
+    font-size: 0;
+    width: 10px;
+    height: 10px;
+    background-color: rgba(255, 255, 255, 0.726);
+    border-radius: 50%;
+    border: 0px;
+}
+ .slick-prev.slick-arrow{
+    position: absolute;
+    top: 42%;
+    z-index: 3;
+    height: 30px;
+    width: 16px;
+    margin-left: 5px;}
+/*.slick-prev.slick-arrow:before{
+    content: "\e901";
+    position: absolute;
+    color: red;
+}
+.slick-next.slick-arrow{
+    position: relative;
+    content: "\e901";
+    font-family: 'icomoon';
+    color: #fff500;
+    height: 30px;
+    width: 16px;
+    top: 42%;
+    z-index: 3;
+    border: 1px solid #fff;
+    background-color: inherit;
+
+}
+.slick-button.slick-disabled{
+    cursor: pointer;
+    background-color: transparent;/*стрелочки
+}*/
+.history{/*раздел HISTORY*/
+    background-image: url(../img/history-backgr.jpg);
+    background-repeat: no-repeat;/* чтобы картинка не повторялась*/
+    background-size: cover;/* не расстягивалась*/
+    background-position:center;
+    background-size:100%;
+    width: 1443px;
+    height: 685px;
+    margin: auto;
+
+}
+.history-content{
+    background-image: url(../img/shadow-history-block.png);
+    height: 684px;
+    width: 707px;
+    margin-left: 736px;
+}
+.history-title{
+    position: absolute;
+    font-family: 'Rokkitt', serif;
+    font-size: 64px;
+    line-height: 73px;
+    color: #DFDFDF;
+    padding: 100px 408px 29px 102px;
+}
+.history-text{
+    position: absolute;
+    width: 387.58px;
+    height: 214.19px;
+    left: 745px;
+    top: 1779px;
+    font-size: 20px;
+    line-height: 24px;
+    color: #E0E0E0;
+    margin: 56px 214px 219px 95px;
+}
+.border-yellow-history{
+position: absolute;
+width: 595.48px;
+height: 345.71px;
+left: 679px;
+top: 1793px;
+border: 2px solid #F2C94C;
+box-sizing: border-box;
+}
+.default-btn-history{
+    width: 255px;
+    height: 60px;
+    background: rgba(255, 255, 255, 0.9);
+    margin: 30px 167px 51px 285px;
+    margin: 374px 175px 51px 338px;
+}
+.default-btn-history:hover,.default-btn:hover{
+    cursor: pointer;
+}
+.booking{
+    height: 730px;
+    width: 1440px;
+}
+.booking-inner{
+    position: absolute;
+    font-family: 'Rokkitt', serif;
+    font-size: 64px;
+    line-height: 73px;
+    text-align: center;
+    padding: 100px 155px 0px 148px;
+
+}
+.booking-list{
+    display: flex;
+    font-size: 25px;
+}
+.booking-list div{
+    padding: 25px 15px 0px 15px;
+}
+.booking-hotels-background{
+    background-image: url(../img/hotel.jpg);
+    width: 255px;
+    height: 290px;
+}
+.booking-hotels:hover,.booking-hostels:hover, .booking-couchsurfing:hover, .booking-apartments:hover{
+    filter: brightness(50%)
+}
+.booking-hotels{
+border-left: 2px solid #F2C94C;
+border-bottom: 2px solid #F2C94C;
+}
+.booking-hotels-footer, .booking-hostels-footer, .booking-apartments-footer, .booking-couchsurfing-footer{
+background-color: #2F2F2F;
+height: 132px;
+font-family: 'Montserrat', sans-serif;
+text-transform: uppercase;
+color: #F2F2F2;
+width: 255px;
+}
+
+.booking-hotels-footer:hover, .booking-hostels-footer:hover, .booking-apartments-footer:hover, .booking-couchsurfing-footer:hover{
+border-left: 2px solid #F2C94C;
+border-bottom: 2px solid #F2C94C;
+}
+/**.booking-hotels-background:hover, .booking-hostels-background:hover, .booking-apartments-background:hover, .booking-couchsurfing-background:hover{
+    background: linear-gradient(0deg, #2F2F2F 4.29%, rgba(133, 122, 122, 0.027) 100%);
+    background-image: url(../img/hostels.jpg);
+}**/
+.booking-hostels-background{
+    background-image: url(../img/hostels.jpg);
+    width: 255px;
+    height: 290px;
+}
+.booking-apartments-background{
+background-image: url(../img/apartments.jpg);
+    width: 255px;
+    height: 290px;
+}
+.booking-couchsurfing-background{
+    background-image: url(../img/couchsurfing.png);
+    width: 255px;
+    height: 290px; 
+}
+.booking-apartments-footer{
+    text-align: inherit;
+}
+.booking-apartments>p{
+    opacity: 0;
+    left: 810px;
+    position: absolute;
+    font-size: 77.8106px;
+    line-height: 88px;
+    text-transform: uppercase;
+    color: #F2C94C;
+    }
+.booking-apartments:hover>p{
+   opacity: 1;
+   background: rgba(0, 0, 0, 0.5);
+    left: 810px;
+    
+    font-size: 77.8106px;
+    line-height: 88px;
+    text-transform: uppercase;
+    color: #F2C94C;
+
+}
+.borshch{
+    height: 755px;
+}
+.borshch-inner-line{
+    border-left: 1px solid #F2C94C;
+    z-index: 999999;
+    height: 508px;
+    position: absolute;
+    left: 26.7%;
+    margin-left: -3px;
+    margin-top: -20px;
+/**width: 508.86px;
+height: 0px;
+left: 264px;
+top: 3579px;
+border: 2px solid #F2C94C;
+transform: rotate(-90deg);**/
+}
+.borshch-inner-line-2{
+    border-left: 1px solid #F2C94C;
+    z-index: 999999;
+    height: 509px;
+    position: absolute;
+    left: 27%;
+    margin-left: -2px;
+    margin-top: 15px;
+}
+.borshch-header{
+position: absolute;
+left: 268px;
+font-family: 'Rokkitt', serif;
+font-weight: normal;
+font-size: 64px;
+text-align: center;
+color: #1D1D1D;
+margin-top: -72px;
+}
+.borshch-menu{
+background: linear-gradient(260.85deg, #000000 -31.13%, rgba(0, 0, 0, 0) 27.52%), #2F2F2F;
+position: absolute;
+width: 1600px;
+height: 508.86px;
+left: -160px;
+top: 3098px;
+}
+.restaurants-menu, .cuisines-menu, .coffe-menu{
+border: 1px outset #F2C94C;
+border-image:  linear-gradient( 90deg,rgba(242, 201, 76, 1),rgba(242, 201, 76, 1),rgba(242, 201, 76, 1),rgba(242, 201, 76, 1),rgba(242, 201, 76, 1),rgba(242, 201, 76, 0.6),rgba(242, 201, 76, 0.5),rgba(242, 201, 76, 0.4),rgba(242, 201, 76, 0.3),rgba(242, 201, 76, 0.2), rgba(242, 201, 76, 0.1)) ;
+border-spacing: 37px;
+border-image-slice: 1;
+width: 348.71px;
+height: 116.33px;
+left: 451px;
+top: 3147px;
+}
+.text-menu-borshch{
+display: inline-block;
+vertical-align: top;
+padding-top: 35px;
+padding-left: 70px;
+}
+.restaurants-menu{
+margin: 49px 25px 0 640px;
+}
+.restaurants-menu-text{
+position: absolute;
+font-weight: 500;
+font-size: 25px;
+line-height: 30px;
+color: #F2F2F2;
+}
+.restaurants-logo{
+font-family: 'Montserrat', sans-serif;
+font-style: normal;
+font-weight: 500;
+font-size: 25px;
+line-height: 30px;
+color: #F2F2F2;
+}
+.cuisines-menu{
+margin: 26px 25px 40px 640px;
+}
+.coffe-menu{
+margin: 35px 25px 48px 640px;
+}
+.numberstyle{
+display: flex;
+font-family: 'Rokkitt', serif;
+font-size: 77.8106px;
+color: rgba(242, 201, 76, 1);
+}
+.borshch-img{
+background-image: url(../img/borshch.png);
+background-repeat: no-repeat;/* чтобы картинка не повторялась*/
+height: 600px;
+position: relative;
+left: 950px;
+top: 155px;
+}
+.borshch img{
+    margin-top: 24px;
+    margin-left: 27px;
+    margin-bottom: 18px;
+    margin-right: 0px;
+}
+.tours{
+max-height: 735px;
+}
+.tours-inner{
+    display: flex;
+    margin-bottom: 102px;
+}
+.tours-list{
+font-family: 'Rokkitt', serif;
+font-size: 64px;
+line-height: 73px;
+text-align: center;
+padding-bottom: 102px;
+}
+.tours-list-content{
+}
+.general-tour-bcgr, .kyiv-day-nigh-bcgr, .kyiv-underground-bcgr, .gastro-tour-bcgr{/*фон для раздела*/
+width: 350px;
+height: 437.24px;
+left: 164.71px;
+top: 4056px;
+background: #FAFAFA;
+box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.1);
+}
+.general-tour-bcgr >img, .kyiv-day-nigh-bcgr >img, .kyiv-underground-bcgr >img,.gastro-tour-bcgr >img {
+    position: inherit;
+    margin-top: -50px;
+}
+.general-tour-bcgr, .kyiv-underground-bcgr{ 
+margin-right: 18px;
+margin-left: 18px;
+}
+.kyiv-day-night-top{
+font-size: 25px;
+line-height: 30px;
+display: flex;
+align-items: center;
+text-align: center;
+}
+.general-tour-title, .kyiv-day-night-title, .kyiv-underground-title, .gastro-tour-title{
+font-family: 'Montserrat', sans-serif;
+font-size: 25px;
+line-height: 30px;
+display: flex;
+align-items: center;
+text-align: center;
+color: #4F4F4F;
+padding: 0px 30px 20px 28px;
+}
+.general-tour-text, .kyiv-day-night-text, .kyiv-underground-text, .gastro-tour-text{
+font-size: 13px;
+line-height: 16px;
+color: #828282;
+padding: 20px 30px 20px 28px;
+}
+.btn-container{
+    width: calc(100%/3);
+}
+.btn-details{
+ cursor: pointer;
+ color: #F2C94C;
+
+}
+svg.strelka-right-3{
+    margin-top: -48px;
+
+}
+.rating-area {
+	overflow: hidden;
+	width: 100px;
+}
+.rating-area:not(:checked) > input {
+	display: none;
+}
+.rating-area:not(:checked) > label {
+	float: right;
+	width: 15px;
+	padding: 0;
+	cursor: pointer;
+	font-size: 17px;
+	line-height: 20px;
+	color: lightgrey;
+	text-shadow: 1px 1px #bbb;
+}
+.rating-area:not(:checked) > label:before {
+	content: '★';
+}
+.rating-area > input:checked ~ label {
+	color: gold;
+	text-shadow: 1px 1px #c60;
+}
+.rating-area:not(:checked) > label:hover,
+.rating-area:not(:checked) > label:hover ~ label {
+	color: gold;
+}
+.rating-area > input:checked + label:hover,
+.rating-area > input:checked + label:hover ~ label,
+.rating-area > input:checked ~ label:hover,
+.rating-area > input:checked ~ label:hover ~ label,
+.rating-area > label:hover ~ input:checked ~ label {
+	color: gold;
+	text-shadow: 1px 1px goldenrod;
+}
+.rate-area > label:active {
+	position: relative;
+}
+.tours-list-content .slick-arrow.slick-prev{
+    position: absolute;
+    left: 0;
+    background: url("../img/arrow_left.png") 0 0 / 120% no-repeat; 
+    width: 40px;
+    height: 70px; 
+    left: -64px;
+;  
+}
+.tours-list-content{
+    display: flex;
+}
+.contacts-content{
+    height: 600px;
+}
+.contacts{
+    TEXT-ALIGN: center;
+    font-family: Rokkitt,sans-serif;
+    font-size: 64px;
+}
+.contacts-text{
+    margin: 105px 0px 0px 95px;
+    width: 350px;
+    height: 90.52px;
+    font-size: 20px;
+    line-height: 24px;
+    color: #E0E0E0;
+}
+.contacts-text img{
+    position: absolute;
+    margin-left: 461px;
+    margin-top: -20px;
+}
+.contacts-container-text{
+    position: absolute;
+width: 920px;
+height: 425.28px;
+left: 260px;
+top: 4570px;
+
+background: #2F2F2F;
+}
+.contacts-help{
+    font-family: Montserrat, sans-serif;
+    font-size: 13px;
+    line-height: 16px;
+}
+.contacts-help a{ 
+    color: #E0E0E0;
+    line-height: 1px;
+}
+.contacts-help{
+    display: flex;
+    margin-left:95px;
+    border: 1px outset #F2C94C;
+border-image:  linear-gradient( 90deg,rgba(242, 201, 76, 1),rgba(242, 201, 76, 1),rgba(242, 201, 76, 1),rgba(242, 201, 76, 1),rgba(242, 201, 76, 1),rgba(242, 201, 76, 0.6),rgba(242, 201, 76, 0.5),rgba(242, 201, 76, 0.4),rgba(242, 201, 76, 0.3),rgba(242, 201, 76, 0.2), rgba(242, 201, 76, 0.1)) ;
+border-spacing: 37px;
+border-image-slice: 1;
+width: 348.71px;
+height: 103px;
+align-items: center;
+}
+.contacts-help img{
+    height: 29px;
+    /* margin-top: -21px; */
+    width: 29px;
+    margin: 32px;
+}
+.form-one{
+    background: #F2C94C;
+    width: 730px;
+    height: 543.81px;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+.form-one h1{
+    position: absolute;
+    height: 70.78px;
+    left: 592px;
+    top: 5109px;
+    font-family: Montserrat, sans-serif;
+    font-size: 25px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+.form-one h2{
+    position: absolute;
+    width: 350px;
+    left: 545px;
+    top: 5166px;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+}
+.form-title{
+    height: 170px;
+}
+/* Стрелка вправо */
+.tours-list-content .slick-arrow.slick-next{
+    position: absolute;
+    right: 0;
+    background: url("../img/arrow_right.png") 0 0 / 120% no-repeat;
+    margin-right: 6px;
+}
+.strelka-right-3 {
+    margin: 20px 310px;
+    width: 35px;
+    height: 20px;
+    cursor: pointer;
+}
+.strelka-right-3 path{
+    fill: #F2C94C;
+    transition: fill 0.5s ease-out;
+}
+.strelka-right-3:hover path{
+    fill: #000;
+}
+.yellow-form{
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+.fancybox-content{ /* форма для заполнения данных*/
+    display: inline-block;
+    position: absolute;
+    width: 730px;
+    height: 543.81px;
+    left: 352px;
+    background: rgb(242, 201, 76)
+}
+.modal-column{
+ display: inline-flex;
+}
+
+.modal-phone-number input, .modal-user-name input{
+    width: 255px;
+    height: 37.06px;
+    background: rgba(255, 255, 255, 0.8);
+}
+.modal-message input{
+width: 540px;
+height: 133.73px;
+background: rgba(255, 255, 255, 0.8);
+}
+.modal-phone-number label, .modal-user-name label, .modal-message label{
+font-family: Raleway, sans-serif;
+font-size: 15px;
+line-height: 13px;
+color: #4F4F4F;
+}
+.modal-submit{
+background: #333333;
+width: 255px;
+height: 60px;
+}
+.modal-submit input {
+width: 255px;
+height: 60px;
+background: #333333;
+text-transform: uppercase;
+color:rgba(242, 242, 242, 1)
+}
