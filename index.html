@@ -298,8 +298,6 @@
                         Ukrainian cuisine, so this tour is absolutely for you.
 
                     </div>
-                    <div class="div"></div>
-                    <div class="div"></div>
                     <div class="btn-container">
                         <div class="rating-area">
                             <input type="radio" id="star-5" name="rating" value="5">
@@ -353,28 +351,69 @@
     </div>
     <div class="form-container">
         <form class="form-one">
-            <div class="form-title">
-                <legend>
-                    <h1>Get in Touch</h1>
-                    <h2>Leave your message and we will contact you soon</h2>
-                </legend>
-            </div>
-            <div class="form-container">
-                <div class="modal-column">
-                    <div class="modal-user-name"><label for="name">Name</label><input type="text"
-                            placeholder="Ваше имя">
+            <div class="form-container1">
+                <div class="form-title">
+
+                    <div class="form-title-text">Get in Touch</div>
+                    <div class="form-title-text-descr">Leave your message and we will contact you soon</div>
+
+                </div>
+                <div class="dd">
+                    <div class="modal-column">
+                        <div class="modal-user-name"><label for="name">Name</label><input type="text" maxlength="20"
+                                style="border: none" placeholder="Your name">
+                        </div>
+                        <div class="modal-phone-number"><label for="name">Phone number</label><input type="tel"
+                                name="telphone" placeholder="888 888 8888" pattern="[0-9]{3} [0-9]{3} [0-9]{4}"
+                                maxlength="12"   style="border: none"
+                                placeholder="Phone number"></div>
                     </div>
-                    <div class="modal-phone-number"><label for="name">Phone number</label><input type="text"
-                            placeholder="Ваш телефон"></div>
-                </div>
-                <div class="modal-message"><label for="Your messsage">Your messsage</label><input type="text"
-                        placeholder="">
-                </div>
-                <div class="modal-submit">
-                    <input type="submit" value="send">
+                    <div class="modal-message"><label for="Your messsage">Your messsage</label><input type="text"
+                            maxlength="800" rows="10" cols="20" wrap="hard" placeholder="" style="border: none"
+                            placeholder="">
+                    </div>
+                    <div class="modal-submit">
+                        <input type="submit" style="border: none" value="send">
+                    </div>
                 </div>
             </div>
         </form>
+    </div>
+    <div class="footer">
+        <div class="container-footer">
+            <div class="header_content_inner-footer">
+                <div class="header_logo-footer">
+                    <a href="#">
+                        <img src="img/logo.png" alt="logo">
+                    </a>
+                </div>
+                <nav class="menu-footer">
+                    <ul>
+                        <li><a href="#">Attractions</a></li>
+                        <li><a href="#">Food</a></li>
+                        <li><a href="#">Room</a></li>
+                        <li><a href="#">Events</a></li>
+                    </ul>
+                </nav>
+                <a class="icon-call-footer" href="tel:380977777777">
+                    <img href="tel:380977777777" src="img/button-call.png" alt="phone">
+                </a>
+            </div>
+            <div class="social-networks">
+                <ul>
+                    <li><a href="http://www.facebook.com">
+                        <img src="img/facebook.png" alt="logo">
+                    </a></li>
+                    <li><a href="http://www.telegram.com">
+                        <img src="img/telegram.png" alt="logo">
+                    </a></li>
+                    <li><a href="http://www.instagram.com">
+                        <img src="img/instagram.png" alt="logo">
+                    </a></li>
+                </ul>
+            </div>
+        </div>
+        
     </div>
 </body>
 
@@ -386,12 +425,14 @@
             <h2>Leave your message and we will contact you soon</h2>
         </legend>
         <div class="modal-column">
-            <div class="modal-user-name"><label for="name">Name</label><input type="text" placeholder="Ваше имя">
+            <div class="modal-user-name"><label for="name">Name</label><input type="text" placeholder="Ваше имя"
+                    maxlength="20">
             </div>
-            <div class="modal-phone-number"><label for="name">Phone number</label><input type="text"
+            <div class="modal-phone-number"><label for="name">Phone number</label><input type="text" maxlength="15"
                     placeholder="Ваш телефон"></div>
         </div>
-        <div class="modal-message"><label for="Your messsage">Your messsage</label><input type="text" placeholder="">
+        <div class="modal-message"><label for="Your messsage">Your messsage</label><input type="text" maxlength="1000"
+                rows="10" cols="20" wrap="hard" placeholder="">
         </div>
         <div class="modal-submit">
             <input type="submit" value="send">

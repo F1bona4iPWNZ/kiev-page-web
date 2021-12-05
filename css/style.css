@@ -39,28 +39,28 @@ font-family: 'Rokkitt', serif;*/
     background-size:100%;
     height: 940px;
 }
-.menu{
+.menu,.menu-footer{
  padding-right: 164px;
  display: inline-block;
  padding-top: 43px;
 }
-.header_content_inner{
+.header_content_inner,.header_content_inner-footer{
 display: flex;
 justify-content: space-between;
 }
 .header_logo{
     padding: 17px 125px 5px 165px;
 }
-.menu li{
+.menu li,.menu-footer li{
     display: inline-block;
 }
-.menu li + li{
+.menu li + li,.menu-footer li + li{
     padding-left: 51px;
 }
-.menu ul{
+.menu ul,.menu-footer ul{
     display: flex;
 }
-.menu a{
+.menu a,.menu-footer a{
     font-weight: 600;
     font-size: 20px;
     line-height: 23px;
@@ -69,7 +69,7 @@ justify-content: space-between;
     padding: 0;
     transition: all .2s;
 }
-.menu a:hover{
+.menu a:hover,.menu-footer a:hover{
     border-color: #fff500;
     padding: 0px ;
 }
@@ -738,7 +738,6 @@ top: 4570px;
 background: #2F2F2F;
 }
 .contacts-help{
-    font-family: Montserrat, sans-serif;
     font-size: 13px;
     line-height: 16px;
 }
@@ -763,6 +762,14 @@ align-items: center;
     width: 29px;
     margin: 32px;
 }
+:active, :hover, :focus {/*чтобы  при нажатии на форму не было черных линий в рамках*/
+    outline: 0;
+    outline-offset: 0;
+}
+.form-container{
+   margin-top: -140px;
+   position: relative;
+}
 .form-one{
     background: #F2C94C;
     width: 730px;
@@ -772,25 +779,13 @@ align-items: center;
     margin-left: auto;
     margin-right: auto
 }
-.form-one h1{
-    position: absolute;
-    height: 70.78px;
-    left: 592px;
-    top: 5109px;
-    font-family: Montserrat, sans-serif;
-    font-size: 25px;
+.form-title-text{
     line-height: 30px;
-    display: flex;
-    align-items: center;
     font-size: 2em;
-    margin: 0.67em 0;
+    padding: 2.67em 0 0 0;
+    font-weight: 600;
 }
-.form-one h2{
-    position: absolute;
-    width: 350px;
-    left: 545px;
-    top: 5166px;
-    font-weight: 300;
+.form-title-text-descr{
     font-size: 13px;
     line-height: 16px;
 }
@@ -832,17 +827,20 @@ align-items: center;
 }
 .modal-column{
  display: inline-flex;
+ margin: 0 68px 28px 68px;
 }
-
 .modal-phone-number input, .modal-user-name input{
     width: 255px;
     height: 37.06px;
     background: rgba(255, 255, 255, 0.8);
 }
 .modal-message input{
-width: 540px;
+width: 552px;
 height: 133.73px;
 background: rgba(255, 255, 255, 0.8);
+}
+.modal-message label{
+margin-right: 410px
 }
 .modal-phone-number label, .modal-user-name label, .modal-message label{
 font-family: Raleway, sans-serif;
@@ -850,15 +848,49 @@ font-size: 15px;
 line-height: 13px;
 color: #4F4F4F;
 }
-.modal-submit{
-background: #333333;
-width: 255px;
-height: 60px;
+.modal-phone-number label {
+    padding-right: 120px;
+    width: 365px;
 }
+.modal-user-name label{
+    padding-right: 180px;
+}
+
 .modal-submit input {
 width: 255px;
 height: 60px;
 background: #333333;
 text-transform: uppercase;
-color:rgba(242, 242, 242, 1)
+color:rgba(242, 242, 242, 1);
+margin-top: 33px;
+}
+.modal-message{
+    margin: 0 68px 0 68px;
+}
+.footer{
+    background-image: url(../img/footer.png);
+    height: 325px;
+    background-repeat: no-repeat;/* чтобы картинка не повторялась*/
+    background-size: cover;/* не расстягивалась*/
+    margin-top: -45px;
+}
+.header_logo-footer img{
+    padding: 158px 0 110px 165px;
+}
+.menu-footer{
+    padding-top: 171px;
+    padding-left: 90px;
+}
+.icon-call-footer img{
+    padding: 169px 172px 130px 0px;
+}
+.social-networks ul{
+    display: flex;
+}
+.social-networks{
+    margin-top: -72px;
+    margin-left: 45%;
+}
+.social-networks li{
+    padding: 0 10px 0 10px;
 }
