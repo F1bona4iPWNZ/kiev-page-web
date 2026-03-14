@@ -1,0 +1,25 @@
+@use '../utils/variables' as *;
+
+.button {
+  padding: 16px 0;
+  border: none;
+  background: var(--color-background-button);
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.3s;
+  height: 60px;
+  font-size: 25px;
+  width: 255px;
+  color: var(--color-secondary-black);
+
+
+  &:hover{
+    background: var(--color-primary-yellow);
+  }
+  // @media screen and (min-width: $bp-tablet) {
+  //   height: 70px;
+  //   width: 256px;
+  //   font-size: 27px;
+  // }
+}

@@ -1,39 +1,28 @@
-$(function(){
-  $('.benefits-slider-container').slick({
-    dots:false,
-   // speed:600,
-    autoplay:false,
-    autoplaySpeed:800,
-    draggable:true,//чтобы переключать слайд только стрелками
-    touchMove:false,// чтобы в моб версии нельзя пальцем двигать туда-сюда слайды
-    centerMode:true,
-    variableWidth:true,//для адаптивности лучше 
-    nextArrow: '<button type="button" class="slick-next slick-arrow"></button>',
-    prevArrow: '<button type="button" class="slick-prev slick-arrow"></button>'
-    });
+var swiper = new Swiper(".swiper", {
 
-    const createPh = (greeting) => {
-      return (name) => `${greeting} ${name}`
-      };
-      
-      const sayHi = createPh('ss');
-      console.log(sayHi('sasha'))
-      console.log(func(str))
-      
-    
-})
-//$(function(){
-  //$('.tours-inner').slick({
-    //arrows:false,
-    //dots:true,
-   // speed:600,
-    //autoplay:false,
-    //autoplaySpeed:3000,
-   // draggable:true,//чтобы переключать слайд только стрелками
-   // touchMove:false,// чтобы в моб версии нельзя пальцем двигать туда-сюда слайды
-   // centerMode:true,
-    //variableWidth:true,//для адаптивности лучше 
-   // nextArrow: '<button type="button" class="slick-next slick-arrow"></button>',
-   // prevArrow: '<button type="button" class="slick-prev slick-arrow"></button>'
-   //})
-//})
+  slidesPerView: 1,
+  spaceBetween: 10,
+  loop:true,
+
+  // breakpoints: {
+
+  //   320: {
+  //     slidesPerView: 2,
+  //     spaceBetween: 20
+  //   },
+
+  //   480: {
+  //     slidesPerView: 3,
+  //     spaceBetween: 30
+  //   },
+  
+  //   640: {
+  //     slidesPerView: 4,
+  //     spaceBetween: 40
+  //   }
+  // },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });

@@ -1,0 +1,19 @@
+@use '../utils/variables' as *;
+
+.swiper-button{
+  background: blue
+  // display: flex;
+  // gap: 20px;
+  // flex-shrink: 0;
+  // align-items: center;
+  // justify-content: center;
+  // fill: black;
+  // width: 44px;
+  // background-color: transparent;
+  // height: 44px;
+  // cursor: pointer;
+}
+
+.swiper-button-next {
+  transform: rotate(180deg);
+}

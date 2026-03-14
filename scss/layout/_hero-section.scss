@@ -1,0 +1,104 @@
+@use '../utils/variables' as *;
+
+.hero{
+  background-image: url(/img/hero/hero-background.jpg);
+  background-repeat: no-repeat; 
+  background-position: bottom;
+  background-size: cover;
+  min-height: 100vh;
+
+&__content{
+display: flex;
+flex-direction: column;
+align-items: center;
+padding-top: 238px;
+} 
+
+&__title{
+font-family: 'Sawarabi Mincho',sans-serif;
+// font-size: 186px;
+font-size: calc(18px + 168 * (100vw / 1440));
+line-height: 100%;
+text-align: center;
+text-transform: uppercase;
+position: relative;
+color: var(--color-hero-title);
+}
+
+&__container{
+  position: relative;
+  padding: 60px 0 40px 0  ;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+gap: 315px;
+margin-bottom:178px;
+
+&::after,&::before{
+  content: "";
+  position: absolute;
+  height: 2px;
+  background: #f5c84c;
+}
+
+&::before {
+  top: 89px;
+  left: -96px;
+  right: 200px;
+}
+
+&::after {
+  bottom: 0px;
+  left: -96px;
+  right: 200px;
+}
+}
+
+&__description{
+  font-family: 'Raleway';
+  font-weight: 300;
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  text-transform: uppercase;
+  // font-size: 45px;
+  font-size: calc(18px + 27 * (100vw / 1440));
+
+  &::before {
+  content: "";
+  position: absolute;
+  top: 89px;
+  bottom: 0;
+  left: -96px;
+  width: 2px;
+  background: #f3c94d;
+}
+
+&::after {
+  content: "";
+  position: absolute;
+  top: 89px;
+  bottom: 0;
+  right: 200px;
+  width: 2px;
+  background: var(--color-primary-yellow);
+}
+}
+
+&__button{
+  position: relative;
+  z-index: 2;
+  font-family: 'Montserrat';
+}
+
+&__bottom{
+   font-family: 'Rokkitt';
+  font-weight: 400;
+  font-size: 64px;
+  background-color: var(--color-background-light);
+  padding-top: 36px;
+  color: var(--color-primary-black);
+}
+}
