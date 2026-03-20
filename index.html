@@ -17,9 +17,24 @@
               <img src="img/header/logo.png" alt="logo" />
             </a>
           </div>
-          <div class="header__search">
-            <span class="header__search-icon"> 1111</span>
-          </div>
+            <div class="header__search">
+                <div class="header__search-icon">
+                    <svg  viewBox="0 0 24 24">
+                        <use  href="./img/icons.svg#icon-search">
+                        </use>
+                    </svg>
+                </div>
+
+                <input 
+                type="text"
+                class="header__search-input"
+                placeholder="search"
+                id="searchInput">
+
+                <div class="header__search-results"     id="searchResults"></div>
+
+            </div>
+
           <nav class="header__nav">
             <ul class="header__nav">
               <li class="header__nav-item">
@@ -37,51 +52,47 @@
             </ul>
           </nav>
           <a class="header__icon-call" href="tel:380977777777">
-            <img
-              href="tel:380977777777"
-              src="img/header/button-call.png"
-              alt="phone"
-            />
+            <svg  viewBox="0 0 24 24">
+                        <use  href="./img/icons.svg#icon-phone">
+                        </use>
+                    </svg>
           </a>
         </div>
+
+        
       </div>
 
-      <!-- <div class="header__mobile">
-    <a class="header__mobile-icons" href="tel:380632522525">
-      <svg width="45" height="45" viewBox="0 0 24 24">
-      <use  href="./img/icons.svg#icon-footer-phone"></use>
-    </svg>
-    </a>
+        <div class="header__mobile">
+            <a class="header__mobile-icons" href="tel:380977777777">
+            <svg  viewBox="0 0 24 24">
+                        <use  href="./img/icons.svg#icon-phone">
+                        </use>
+                    </svg>
+          </a>
 
-      <img class="header__mobile-logo" src="./img/logo.png" alt="Logo">
-
-      <button class="header__burger menu-btn-open" type="button">
+            <button class="header__burger menu-btn-open" type="button">
                 <svg width="45" height="45" class="address-icon"> 
-                            <use href="./img/icons.svg#icon-burger"></use>
+                            <use href="./img/icons.svg#icon-menu-burger"></use>
                 </svg>
-      </button>
-    </div> -->
+            </button>
+        </div>
 
-      <!-- <div class="header__mobile-menu mobile-menu">
-                <button type="button" class="mobile-menu__btn-close menu-btn-close">
-                  <svg width="26" height="26" class="address-icon"> 
-                            <use href="./img/icons.svg#icon-burger-close"></use>
-                </svg>
+        <div class="header__mobile-menu mobile-menu">
+                <button type="button"       class="mobile-menu__btn-close menu-btn-close">
+                  <svg width="20" height="20" class="address-icon"> 
+                        <use href="./img/icons.svg#icon-burger-close"></use>
+                    </svg>
                 </button>
-                <div class="mobile-menu__container">
+            <div class="mobile-menu__container">
                 <ul class="mobile-menu__menu">
-                    <li><a class="mobile-menu__menu--link" href="#traditions-section">gallery</a></li>
-                    <li><a class="mobile-menu__menu--link" href="#chefs-section">services</a></li>
-                    <li><a class="mobile-menu__menu--link" href="#formats-section">about</a></li>
-                    <li><a class="mobile-menu__menu--link" href="#contact-section">products</a>
-                    </li>
-                    <li><a class="mobile-menu__menu--link" href="#contact-section">contacts</a>
-                    </li>
-                    <li><a class="mobile-menu__menu--link" href="#contact-section">join</a>
+                    <li><a class="mobile-menu__menu--link" href="#benefits-section">Attractions</a></li>
+                    <li><a class="mobile-menu__menu--link" href="#food-section">Food</a></li>
+                    <li><a class="mobile-menu__menu--link" href="#booking-section">Room</a></li>
+                    <li><a class="mobile-menu__menu--link" href="#events-section">Events</a>
                     </li>
                 </ul>
             </div>
-            </div> -->
+        </div>
     </header>
 
     <section class="hero">
@@ -99,9 +110,6 @@
           <button type="button" class="hero__button button">read more</button>
       
         </div>
-        <!--<div class="welcome-descript-p2">
-                ready to impress you
-            </div>-->
            <div class="hero__bottom ">Why Kyiv is so special?
       </div> 
       </div>
@@ -109,14 +117,12 @@
     </section>
 
     <main>
-        <section class="benefits section">
+         <section class="benefits section">
             
-        <div class="benefits__container swiper">
-            <div type="button" class="swiper-button     swiper-button-prev">
-                <svg  width="12" height="22"> 
-                            <use href="./img/header/logo.png"></use>
-                </svg>
-            </div>
+        <div class="benefits__wrapper">
+
+            <div class="benefits__container swiper">
+            
             <div class="benefits__inner swiper-wrapper">
                 <div class="benefits__slider swiper-slide">
                     <img class="benefits__photo" alt="das" src="./img/benefits/benefits-background.jpg"/>
@@ -124,7 +130,7 @@
                             <h3 class="benefits__slider-title">place for everyone </h3>
                             <p class="benefits__slider-text">
                             No matter how old are and where are You from, Kyiv will greet and welcome You, because it’s
-                            place for everyone. Every person can have a wonderfull vacation, which he/she will never
+                            <b>place for everyone.</b> Every person can have a wonderfull vacation, which he/she will never
                             forget.
                             </p>
                         </div>
@@ -138,43 +144,66 @@
                             <h3 class="benefits__slider-title">place for everyone </h3>
                             <p class="benefits__slider-text">
                             No matter how old are and where are You from, Kyiv will greet and welcome You, because it’s
-                            place for everyone. Every person can have a wonderfull vacation, which he/she will never
+                            <b>place for everyone.</b> Every person can have a wonderfull vacation, which he/she will never
                             forget.
                             </p>
                         </div>
                    
                 </div>
+            </div>
 
+           
                 
-                
-            </div>
-            <div type="button" class="swiper-button     swiper-button-next">
-                    <svg  width="12" height="22"> 
-                            <use href="./img/header/logo.png"></use>
-                        </svg>
-                </div>
+           
             
+            <!-- <div class="swiper-pagination"></div>
+  </div> -->
         </div>
-    </section>
-    <!-- <div class="history">
-        <div class="history-content">
-            <div class="history-title">
-                History
-            </div>
-            <div class="history-text">
+        <div class="benefits__arrow-nav">
+                    <div type="button" class="swiper-button__benefits     swiper-button-prev">
+                    <svg > 
+                            <use href="./img/icons.svg#icon-arrow"></use>
+                    </svg>
+                </div>
+
+                <div type="button" class="swiper-button__benefits     swiper-button-next">
+                    <svg> 
+                            <use href="./img/icons.svg#icon-arrow"></use>
+                    </svg>
+                </div>
+                </div>
+        </div>
+            
+        
+    </section> 
+
+
+    <div class="history section">
+        <div class="history__container">
+
+            <div class="history__image"></div>
+
+            <div class="history__content">
+                <div class="history__description">
+                    <h2 class="history__title">
+                    History
+                    </h2>
+                    <p class="history__text">
                 Kyiv was founded more than 1,500 years ago by three brothers Kyi, Schek, Khoryv and their sister Lybid.
                 The city was named after the oldest brother Kyi. In the 9th century Kyiv became the capital of the
                 Ancient Rus. The territory of this independent state stretched out from the Baltic Sea in the North to
                 the Black Sea in the South and from Volga River in the East to the Carpathians Mountains in the West.
+                    </p>
+                </div>
+
+                <button type="button" class="history__button button">read more</button>
             </div>
         </div>
-        <div class="border-yellow-history">
-            <div data-fancybox data-src="#modal" href="javascript:;" class="default-btn-history">
-                <a class="read-more">read more</a>
-            </div>
-        </div>
+
     </div>
-    <div class="booking">
+
+
+    <!-- <div class="booking">
         <div class="booking-inner">
             <div class="booking-header">Find comfortable place to stay</div>
             <div class="booking-list">
@@ -474,7 +503,7 @@
     </div> -->
   </body>
 
-  <div id="modal">
+  <!-- <div id="modal">
     <form class="form-one" action="#">
       <legend>
         <h1>Get in Touch</h1>
@@ -505,7 +534,10 @@
         <input type="submit" value="send" />
       </div>
     </form>
-  </div>
+  </div> -->
 <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
   <script src="js/main.js"></script>
+<script src="js/mobile-menu.js"></script>
+    <script src="js/search.js"></script>
 </html>

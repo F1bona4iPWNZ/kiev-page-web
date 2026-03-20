@@ -1,15 +1,19 @@
 var swiper = new Swiper(".swiper", {
 
   slidesPerView: 1,
-  spaceBetween: 10,
+  // spaceBetween: 10,
   loop:true,
+  speed: 1200,
+  autoplay: {
+    delay: 3000,
+  },
 
   // breakpoints: {
 
-  //   320: {
-  //     slidesPerView: 2,
-  //     spaceBetween: 20
-  //   },
+  //   // 320: {
+  //   //   slidesPerView: 2,
+  //   //   spaceBetween: 20
+  //   // },
 
   //   480: {
   //     slidesPerView: 3,

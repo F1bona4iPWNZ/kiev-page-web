@@ -1,19 +1,37 @@
-@use '../utils/variables' as *;
+@use "../utils/variables" as *;
 
-.swiper-button{
-  background: blue
-  // display: flex;
-  // gap: 20px;
-  // flex-shrink: 0;
-  // align-items: center;
-  // justify-content: center;
-  // fill: black;
-  // width: 44px;
-  // background-color: transparent;
-  // height: 44px;
-  // cursor: pointer;
+.swiper-button__benefits {
+  color: var(--color-primary-black);
+  fill: var(--color-primary-black);
+}
+
+.benefits__container {
+  position: relative;
+  max-height: 422px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.swiper-button-next,.swiper-button-prev{
+ display: none;
+
+  @media screen and (min-width: $bp-tablet) {
+    display: block;
+      width: 30px;
+      height: 30px;
+      position: absolute;
+    }
+}
+
+.swiper-button-prev {
+  
+  left: 0;
+  
+  transform: rotate(180deg);
 }
 
 .swiper-button-next {
-  transform: rotate(180deg);
+  right: 0;
+ 
+  
 }

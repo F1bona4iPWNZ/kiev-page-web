@@ -6,15 +6,16 @@
 // @use './components/reveal';
 @use './components/button';
 @use './components/carousel-button';
+@use './components/search';
 // @use './components/pagination';
-// @use './components/mobile-menu';
+@use './components/mobile-menu';
 // @use './components/rating';
 
 @use './layout/header';
 @use './layout/hero-section';
 @use './layout/benefits-section';
 @use './layout/section';
-// @use './layout/services';
+@use './layout/history-section';
 // @use './layout/advantages';
 // @use './layout/team';
 // @use './layout/reviews';
