@@ -203,110 +203,152 @@
     </div>
 
 
-    <!-- <div class="booking">
-        <div class="booking-inner">
-            <div class="booking-header">Find comfortable place to stay</div>
-            <div class="booking-list">
-                <div class="booking-hotels">
-                    <div class="booking-hotels-background"></div>
-                    <a href="#" class="booking-hotels-footer"> hotels</a>
+    <div class="booking section">
+        <div class="booking__container">
+            <h2 class="booking__title title">Find comfortable place to stay</h2>
+            <div class="booking__wrapper">
+                <div class="booking__card booking__card--hotel">
+                    <img class="booking__image" alt="hotels" src="./img/booking/hotel.jpg"/>
+                    <div class="booking__overlay">
+                    <span class="booking__number">523</span>
+                    <span class="booking__arrow">
+                        <svg viewBox="0 0 24 24">
+                        <use href="./img/icons.svg#icon-arrow"></use>
+                    </svg>
+                    </span>
+                    </div>
+                    <div class="booking__footer">
+                        <a href="#" class="booking-hotels-footer"> hotels</a>
+                    </div>
                 </div>
-                <div class="booking-hostels">
-                    <div class="booking-hostels-background"></div>
-                    <a href="#" class="booking-hostels-footer">hostels</a>
+                <div class="booking__card booking__card--hostel">
+                    <img class="booking__image" alt="hostels" src="./img/booking/hostels.jpg"/>
+                    <div class="booking__overlay">
+                    <span class="booking__number">523</span>
+                    <span class="booking__arrow">
+                        <svg viewBox="0 0 24 24">
+                        <use href="./img/icons.svg#icon-arrow"></use>
+                    </svg>
+                    </span>
+                    </div>
+                    <div class="booking__footer ">
+                        <a href="#" class="booking-hotels-footer"> hostels</a>
+                    </div>
                 </div>
-                <div class="booking-apartments">
-                    <p>523</p>
-                    <div class="booking-apartments-background"></div>
-                    <a href="#" class="booking-apartments-footer">apartments</a>
+                <div class="booking__card booking__card--apartments">
+                    <img class="booking__image" alt="apartments" src="./img/booking/apartments.jpg"/>
+                    <div class="booking__overlay">
+                    <span class="booking__number ">523</span>
+                    <span class="booking__arrow">
+                        <svg viewBox="0 0 24 24">
+                        <use href="./img/icons.svg#icon-arrow"></use>
+                    </svg>
+                    </span>
+                    <div class="booking__footer">
+                        <a href="#" class="booking-hotels-footer">apartments</a>
+                    </div>
+                    </div>
+                    
                 </div>
-                <div class="booking-couchsurfing">
-                    <div class="booking-couchsurfing-background"></div>
-                    <a href="#" class="booking-couchsurfing-footer">couchsurfing</a>
+                <div class="booking__card booking__card--couchsurfing">
+                    <img class="booking__image" alt="couchsurfing" src="./img/booking/couchsurfing.png"/>
+                    <div class="booking__overlay">
+                    <span class="booking__number">523</span>
+                    <span class="booking__arrow">
+                        <svg viewBox="0 0 24 24">
+                        <use href="./img/icons.svg#icon-arrow"></use>
+                    </svg>
+                    </span>
+                    </div>
+                    <div class="booking__footer">
+                        <a href="#" class="booking-hotels-footer">couchsurfing</a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="borshch">
 
-        <div class="borshch-inner">
-            <div class="borshch-header">You will never leave Kyiv hungry</div>
-            <div class="borshch-menu">
-                <div class="borshch-inner-line"></div>
-                <div class="borshch-inner-line-2"></div>
-                <div class="restaurants-menu">
-                    <div class="restaurants-logo">
-                        <a href="#">
-                            <img src="img/restaurant-img.png" alt="logo">
-                        </a>
-                        <div class="text-menu-borshch">
-                            <a class="numberstyle">1500</a>
-                            <a class="restaurants-menu-text">restaurants</a>
-                        </div>
+    <div class="food section">
+        <h2 class="food__title title">
+                You will never leave Kyiv hungry
+            </h2>
+        <div class="food__container">
+            
+
+            <div class="food__list">
+                <img class="food__image" alt="food-borshch-image" src="./img/food/borshch.png"/>
+                <div class="food__menu food__menu--restaurants">
+                    <svg class="food__icon" viewBox="0 0 24 24">
+                        <use href="./img/icons.svg#icon-restaurants"></use>
+                    </svg>
+
+                    <div class="food__info">
+                        <span class="food__count">1500</span>
+                        <span class="food__label">restaurants</span>
                     </div>
+
                 </div>
-                <div class="cuisines-menu">
-                    <div class="restaurants-logo">
-                        <a href="#">
-                            <img src="img/cuisines-img.png" alt="logo">
-                        </a>
-                        <div class="text-menu-borshch">
-                            <a class="numberstyle">32</a>
-                            <a class="restaurants-menu-text">cuisines</a>
-                        </div>
+                <div class="food__menu food__menu--cuisines">
+
+                    <svg class="food__icon" viewBox="0 0 24 24">
+                        <use href="./img/icons.svg#icon-cuisines"></use>
+                    </svg>
+
+                    <div class="food__info">
+                        <span class="food__count">32</span>
+                        <span class="food__label">cuisines</span>
                     </div>
+
                 </div>
-                <div class="coffe-menu">
-                    <div class="restaurants-logo">
-                        <a href="#">
-                            <img src="img/coffee-bean.png" alt="logo">
-                        </a>
-                        <div class="text-menu-borshch">
-                            <a class="numberstyle">2365</a>
-                            <a class="restaurants-menu-text">coffe shops</a>
-                        </div>
+                <div class="food__menu food__menu--coffee-shops">
+                    <svg class="food__icon" viewBox="0 0 24 24">
+                        <use href="./img/icons.svg#icon-coffee-shops"></use>
+                    </svg>
+
+                    <div class="food__info">
+                        <span class="food__count">2365</span>
+                        <span class="food__label">coffee shops</span>
                     </div>
+
                 </div>
             </div>
         </div>
-        <div class="borshch-img"></div>
     </div>
-    <div class="tours">
-        <div class="tours-list">Find your perfect tour</div>
-        <div class="tours-inner">
-            <div class="tours-list-content">
-                <div class="container-general-tour">
-                    <div class="general-tour-img"></div>
-                    <div class="general-tour-bcgr"><img src="./img/general-tour-img.png" alt="">
-                        <div class="general-tour-title">GENERAL TOUR</div>
-                        <div class="general-tour-text">General tour is for those, who want to acquaint yourself with the
-                            Kyiv and it’s the
-                            most important and popular tourists’s atractions.</div>
-                        <div class="btn-container">
-                            <div class="rating-area">
-                                <input type="radio" id="star-5" name="rating" value="5">
-                                <label for="star-5" title="Оценка «5»"></label>
-                                <input type="radio" id="star-4" name="rating" value="4">
-                                <label for="star-4" title="Оценка «4»"></label>
-                                <input type="radio" id="star-3" name="rating" value="3">
-                                <label for="star-3" title="Оценка «3»"></label>
-                                <input type="radio" id="star-2" name="rating" value="2">
-                                <label for="star-2" title="Оценка «2»"></label>
-                                <input type="radio" id="star-1" name="rating" value="1">
-                                <label for="star-1" title="Оценка «1»"></label>
-                            </div>
-                            <div class="btn-details"><a class="btn-details-input" href="#">
-                                    more details <svg class="strelka-right-3" viewBox="0 0 5 9">
-                                        <path
-                                            d="M0.419,9.000 L0.003,8.606 L4.164,4.500 L0.003,0.394 L0.419,0.000 L4.997,4.500 L0.419,9.000 Z">
-                                        </path>
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
+<div class="tours">
+  <h2 class="tours__title">Find your perfect tour</h2>
+
+  <div class="tours__slider swiper">
+    <div class="swiper-wrapper">
+
+      <div class="tours__slide swiper-slide">
+        <div class="tours__card">
+          <img class="tours__image" src="img1.jpg" alt="">
+          <h3 class="tours__name">General tour</h3>
+        </div>
+      </div>
+
+      <div class="tours__slide swiper-slide">
+        <div class="tours__card">...</div>
+      </div>
+
+      <div class="tours__slide swiper-slide">
+        <div class="tours__card">...</div>
+      </div>
+
+      <div class="tours__slide swiper-slide">
+        <div class="tours__card">...</div>
+      </div>
+
+      <div class="tours__slide swiper-slide">
+        <div class="tours__card">...</div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+    <!--
             <div class="kyiv-day-night">
                 <div class="kyiv-day-nigh-bcgr"><img src="../kiev-page/img/kyiv-day-night.png" alt="22">
                     <div class="kyiv-day-night-title">Kyiv Day&Night</div>

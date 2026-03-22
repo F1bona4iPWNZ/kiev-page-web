@@ -1,9 +1,9 @@
-var swiper = new Swiper(".swiper", {
+var swiper = new Swiper(".benefits__container", {
 
   slidesPerView: 1,
   // spaceBetween: 10,
   loop:true,
-  speed: 1200,
+  speed: 1600,
   autoplay: {
     delay: 3000,
   },
@@ -30,3 +30,23 @@ var swiper = new Swiper(".swiper", {
         prevEl: ".swiper-button-prev",
       },
     });
+
+    const NewSwiper = new SwiperTours('.tours__slider', {
+  slidesPerView: 'auto',
+  spaceBetween: 30,
+  centeredSlides: true,
+
+  loop: true,
+
+  grabCursor: true,
+
+  breakpoints: {
+    768: {
+      centeredSlides: false,
+      slidesPerView: 2,
+    },
+    1024: {
+      slidesPerView: 3,
+    }
+  }
+});

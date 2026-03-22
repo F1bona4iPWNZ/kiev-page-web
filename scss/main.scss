@@ -7,17 +7,18 @@
 @use './components/button';
 @use './components/carousel-button';
 @use './components/search';
-// @use './components/pagination';
 @use './components/mobile-menu';
+// @use './components/booking-card';
 // @use './components/rating';
 
 @use './layout/header';
+@use './layout/title';
 @use './layout/hero-section';
 @use './layout/benefits-section';
 @use './layout/section';
 @use './layout/history-section';
-// @use './layout/advantages';
-// @use './layout/team';
+@use './layout/booking';
+@use './layout/food-section';
 // @use './layout/reviews';
 // @use './layout/products';
 // @use './layout/contacts';
