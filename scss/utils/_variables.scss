@@ -1,14 +1,16 @@
 :root{
+    // --color-background-primary:#F2F2F2;
     --color-primary-light:#FFFFFF;
     --color-primary-black:#1D1D1D;
     --color-secondary-black:#333333;
-    --color-background-light:#F2F2F2;
+    --color-background-light:#f5f3ef;
     --color-background-button:#FFFFFFE5;
     --color-primary-yellow:#F2C94C;
     --color-hero-title:#FFFFFF40;
+    --color-primary-gray:#C4C4C4;
+    --color-primary-orange:#DC771F;
 
 
-    // --swiper-navigation-sides-offset: -80px;
 }
 $bp-mobile:480px;
 $bp-tablet: 768px;

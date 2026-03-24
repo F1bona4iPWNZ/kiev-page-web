@@ -1,0 +1,107 @@
+@use "../utils/variables" as *;
+
+.tours {
+  display: flex;
+  flex-direction: column;
+  gap: 102px;
+
+  overflow: hidden;
+
+  &__title {
+    margin-top: 0;
+
+    @media screen and (min-width: $bp-tablet) {
+      margin-top: 104px;
+    }
+  }
+
+  &__container {
+    overflow: visible;
+    padding-left: 0;
+    padding-right: 20px;
+
+    margin: 0;
+
+    @media screen and (min-width: $bp-tablet) {
+      padding-left: 164px;
+    }
+  }
+
+  &__card {
+    width: 100%;
+    padding-bottom: 28px;
+    margin-top: -60px;
+    background: #fafafa;
+    box-shadow: 0px 4px 25px 0px #0000001a;
+  }
+
+  &__image {
+    width: 100%;
+    position: relative;
+    top: -45px;
+  }
+
+  &__list {
+    color: var(--color-primary-black);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 26px;
+    align-items: stretch;
+    gap: 32px;
+  }
+
+  &__variety {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: -35px;
+  }
+
+  &__name {
+    font-size: 25px;
+  }
+
+  &__duration {
+    font-size: 17px;
+  }
+
+  &__price {
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--color-secondary-black);
+  }
+
+  &__description {
+    font-size: 13px;
+    color: var(--color-secondary-black);
+  }
+
+  &__footer {
+    display: flex;
+    flex-direction: row;
+    gap: 84px;
+  }
+
+  &__details {
+    font-size: 15px;
+    color: var(--color-primary-orange);
+    cursor: pointer;
+
+    &:hover .tours__details-button {
+      transform: translateX(5px);
+    }
+  }
+
+  &__details-button {
+    width: 14px;
+    height: 10px;
+    color: var(--color-primary-orange);
+    transition: 0.3s;
+  }
+}
+.swiper-slide {
+  width: 350px;
+  flex-shrink: 0;
+}

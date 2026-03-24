@@ -1,19 +1,19 @@
 @use "../utils/variables" as *;
 
-.title{
+.title {
   margin: 0 auto;
-    font-family: "Rokkitt";
-    font-weight: 400;
-    font-size: 24px;
-    background-color: var(--color-background-light);
-    padding-top: 64px;
-    color: var(--color-primary-black);
+  font-family: "Rokkitt";
+  font-weight: 400;
+  font-size: 24px;
+  background-color: var(--color-background-light);
+  padding-top: 64px;
+  color: var(--color-primary-black);
 
-    @media screen and (min-width: $bp-mobile) {
-      font-size: 34px;
-    }
+  @media screen and (min-width: $bp-mobile) {
+    font-size: 34px;
+  }
 
-    @media screen and (min-width: $bp-tablet) {
-      font-size: 64px;
-    }
+  @media screen and (min-width: $bp-tablet) {
+    font-size: 64px;
+  }
 }

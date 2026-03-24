@@ -114,7 +114,6 @@
   }
 
   &__mobile {
-    
     margin: 0 auto;
     padding: 0 20px;
 
@@ -124,14 +123,14 @@
   }
 
   &__burger {
-    // background: linear-gradient(to right, transparent 0%, rgba(42, 63, 124, 0.247) 50%);
-    // border-radius: 10%;
     position: fixed;
     right: 10px;
     background-color: transparent;
     border: none;
     padding: 0;
     fill: var(--color-primary-light);
+    
+    
   }
 
   &__mobile-icons {
@@ -144,7 +143,7 @@
     fill: var(--color-primary-light);
     box-shadow: 0 0 0 0 var(--color-primary-light);
     border-radius: 50%;
-    animation: shake 2s infinite; /* Запуск анімації */
+    animation: shake 2s infinite;
 
     @keyframes shake {
       0% {

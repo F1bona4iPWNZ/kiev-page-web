@@ -8,8 +8,8 @@
 @use './components/carousel-button';
 @use './components/search';
 @use './components/mobile-menu';
-// @use './components/booking-card';
-// @use './components/rating';
+@use './components/rating';
+@use './components/input';
 
 @use './layout/header';
 @use './layout/title';
@@ -19,9 +19,8 @@
 @use './layout/history-section';
 @use './layout/booking';
 @use './layout/food-section';
-// @use './layout/reviews';
-// @use './layout/products';
-// @use './layout/contacts';
-// @use './layout/footer';
+@use './layout/tours';
+@use './layout/contact-section';
+@use './layout/footer';
 
 

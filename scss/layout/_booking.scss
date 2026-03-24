@@ -11,7 +11,6 @@
   &__title {
     padding-top: 50px;
 
-
     @media screen and (min-width: $bp-tablet) {
       padding-top: 100px;
     }
@@ -55,7 +54,7 @@
     align-items: center;
 
     font-size: 32px;
-    color: var(--color-primary-yellow); 
+    color: var(--color-primary-yellow);
     opacity: 0;
     transition: 0.4s;
   }
