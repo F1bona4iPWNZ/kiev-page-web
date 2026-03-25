@@ -5,13 +5,15 @@
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: cover;
-  min-height: 100vh;
+  // min-height: 100vh;
 
   &__content {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-top: 100px;
+    margin: 0 auto;
 
     @media screen and (min-width: $bp-tablet) {
       padding-top: 238px;
@@ -24,10 +26,10 @@
         content: "";
         position: absolute;
         top: 0;
-        bottom: 0;
+        bottom: 96px;
         left: 22px;
         width: 80px;
-        background-color: #c4c4c4;
+        background-color: var(--color-primary-gray);
         border: 1px solid transparent;
       }
     }
@@ -111,6 +113,7 @@
     justify-content: space-around;
     text-transform: uppercase;
     font-size: 40px;
+    align-items: center;
 
     @media screen and (min-width: $bp-mobile) {
       font-weight: 300;
@@ -121,6 +124,7 @@
     @media screen and (min-width: $bp-tablet) {
       font-size: calc(18px + 27 * (100vw / 1440));
       gap: 30px;
+      align-items: flex-start;
     }
 
     &::before {
@@ -166,6 +170,7 @@
     padding-top: 36px;
     color: var(--color-primary-black);
     z-index: 2;
+    bottom: 0;
 
     @media screen and (min-width: $bp-mobile) {
       font-size: 44px;

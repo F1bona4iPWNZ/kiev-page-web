@@ -24,6 +24,16 @@
     gap: 30px;
     align-items: center;
     justify-items: center;
+
+    @media screen and (min-width: $bp-tablet) {
+      flex-wrap: nowrap;
+      gap: 12px;
+    }
+
+    @media screen and (min-width: $bp-desktop) {
+      
+      gap: 30px;
+    }
   }
 
   &__card {
@@ -75,7 +85,7 @@
   &__footer {
     width: 100%;
     background: var(--color-secondary-black);
-    padding: 30px;
+    padding: 25px;
     text-align: center;
 
     a {

@@ -1,6 +1,7 @@
 var swiper = new Swiper(".benefits__container", {
   slidesPerView: 1,
   loop: true,
+  spaceBetween: 20,
   speed: 1600,
   autoplay: {
     delay: 3000,
@@ -18,6 +19,10 @@ var swiperTour = new Swiper(".tours__container", {
   centeredSlides: false,
 
   loop: true,
+  speed: 2000,
+  autoplay: {
+    delay: 2000,
+  },
 
   grabCursor: true,
 });
